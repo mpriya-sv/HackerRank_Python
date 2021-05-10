@@ -1,0 +1,18 @@
+N = int(input())
+out = []
+for i in range(0,N):
+    ip = input().split();
+    if ip[0] == "print":
+        print(out)
+    elif ip[0] == "insert":
+        out.insert(int(ip[1]),int(ip[2]))
+    elif ip[0] == "remove":
+        out.remove(int(ip[1]))
+    elif ip[0] == "pop":
+        out.pop()
+    elif ip[0] == "append":
+        out.append(int(ip[1]))
+    elif ip[0] == "sort":
+        out.sort()
+    else:
+        out.reverse()
